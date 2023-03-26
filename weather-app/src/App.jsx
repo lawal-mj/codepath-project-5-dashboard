@@ -61,14 +61,19 @@ export default function App() {
 
   return (
     <div>
-      <input type="text" placeholder="Search by Date" value={searchTerm} onChange={event => setSearchTerm(event.target.value)} />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <input className="border-4" type="text" placeholder="Search by Date" value={searchTerm} onChange={event => setSearchTerm(event.target.value)} />
       <div className="flex gap-3">
         <SummaryBox data={lat} label={"latitude"}/>
         <SummaryBox data={long} label={"longitude"}/>
         <SummaryBox data={state} label={"state"}/>
 
       </div>
-      <table className="table-auto">
+      <table className="table-fixed">
         <TableHead />
         <>
           {searchTerm ? searchData : DataList}

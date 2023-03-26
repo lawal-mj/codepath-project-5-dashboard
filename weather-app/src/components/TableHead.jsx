@@ -2,7 +2,7 @@ export default function TableHead() {
   return (
     <>
 
-        <thead>
+        <thead className="">
           <tr>
             <th>Date</th>
             <th>Max Temp</th>

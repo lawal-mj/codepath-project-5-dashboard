@@ -1,7 +1,7 @@
 export default function TableBody(props) {
   return (
     <>
-      <tr>
+      <tr className="border">
         <td>{props.date}</td>
         <td>{props.max_temp}</td>
         <td>{props.min_temp}</td>
